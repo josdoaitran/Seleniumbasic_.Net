@@ -2,8 +2,10 @@
 Seleniumbasic_.Net
 
 
-Download - Install
+1. Download - Install
 
-_Reference:_ 
+_Reference:_
+ 
 http://toolsqa.com/selenium-webdriver/c-sharp/download-and-install-visual-studio/
 
+2. Build
