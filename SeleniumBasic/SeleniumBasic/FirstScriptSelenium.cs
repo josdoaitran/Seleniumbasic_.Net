@@ -9,6 +9,7 @@ namespace SeleniumBasic
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }
