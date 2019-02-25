@@ -15,3 +15,8 @@ http://toolsqa.com/selenium-webdriver/c-sharp/download-and-install-visual-studio
 
 - Tools >> Extensions and Updates >> Manage Nuget Packages for Solution…
 - In the Seach Box, search for `Selenium.WebDriver` or `Selenium`
+
+_Note:_ If cannot add `Selenium` to solution project, we should clear NuGet caches.
+
+2.2 Simple
+
