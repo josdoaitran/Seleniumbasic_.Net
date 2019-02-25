@@ -18,5 +18,5 @@ http://toolsqa.com/selenium-webdriver/c-sharp/download-and-install-visual-studio
 
 _Note:_ If cannot add `Selenium` to solution project, we should clear NuGet caches.
 
-2.2 Simple
+2.2 Selenium with Nunit framework
 
