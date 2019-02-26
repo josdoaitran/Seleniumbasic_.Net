@@ -1,13 +1,15 @@
 using System;
-
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 
 namespace SeleniumBasic
 {
     public class FirstScriptSelenium
     {
-        public void TestMethod1()
+        static void test(string[] args)
         {
-
+            IWebDriver driver = new FirefoxDriver();
+            driver.Url = "http://www.demoqa.com";
         }
     }
 }
