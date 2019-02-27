@@ -13,6 +13,14 @@ namespace UnitTestSelenium
         {
             IWebDriver driver = new FirefoxDriver();
             driver.Url = "http://google.com";
+            String actualTitle = driver.Title;
+            String expectedTitle = "Google";
+
+            if (actualTitle.Equals(expectedTitle))
+            {
+                Console.Out("DDDDDD");
+
+            }
         }
     }
 }
