@@ -13,10 +13,12 @@ namespace SeleniumBasic
     public class FirstScriptSelenium
     {
         [TestMethod]
-        static void test(string[] args)
+        public void test()
         {
             IWebDriver driver = new FirefoxDriver();
             driver.Url = "http://www.demoqa.com";
+            driver.Manage().Window.Maximize();
+            driver.Close();
         }
     }
 }
