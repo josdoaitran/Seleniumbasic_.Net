@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 
 namespace UnitTestSelenium
@@ -18,9 +19,22 @@ namespace UnitTestSelenium
 
             if (actualTitle.Equals(expectedTitle))
             {
-                Console.Out("DDDDDD");
+                Console.WriteLine("Passed");
 
             }
+            else {
+                Console.WriteLine("Failed, current title: " + actualTitle );
+            }
+        }
+        [TestMethod]
+        public void Test_BasicAction()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "https://en.wikipedia.org/wiki/Wiki";
+            driver.FindElement(By.CssSelector("#searchInput")).Clear();
+            driver.FindElement(By.CssSelector("#searchInput")).SendKeys("Selenium");
+            driver.FindElement(By.Id("searchButton")).Click();
+            driver.Quit();
         }
     }
 }
